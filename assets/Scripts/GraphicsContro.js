@@ -54,6 +54,7 @@ cc.Class({
         this.rigibodyLogic.gravityScale = 2;
         
         this.physicsLine = this.addComponent("MyPhysicsCollider");
+        //this.physicsLine.body.type = 2;   // 0:static静态      1:kinematic 不受外力的      2:Dynamic 动态的
         this.physicsLine.lineWidth = 10;//this.graphics.lineWidth;
         this.physicsLine.points = this.line_point;
         this.physicsLine.friction = 0.2;
